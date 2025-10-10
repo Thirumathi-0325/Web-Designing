@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Five Star Hotel Management</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb') center/cover no-repeat;
+      height: 90vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    .room-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .booking {
+      background: #f7f7f7;
+      padding: 50px 0;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">⭐⭐⭐⭐⭐ FIVE STAR HOTEL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container" data-aos="fade-up" data-aos-duration="1200">
+      <h1>Welcome to Five Star Luxury</h1>
+      <p>Experience elegance, comfort, and premium hospitality.</p>
+      <a href="#booking" class="btn btn-light mt-3">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section class="py-5" id="rooms">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Our Rooms</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card room-card shadow">
+            <img src="delux2.jpg" class="card-img-top" alt="Room">
+            <div class="card-body">
+              <h5 class="card-title">Deluxe Room</h5>
+              <p class="card-text">A luxurious stay with ocean view, king-size bed, and modern amenities.</p>
+              <button class="btn btn-primary">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card room-card shadow">
+            <img src="suiteroom.jpeg" class="card-img-top" alt="Room">
+            <div class="card-body">
+              <h5 class="card-title">Suite Room</h5>
+              <p class="card-text">Spacious suite with living area, balcony, and top-class service.</p>
+              <button class="btn btn-primary">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card room-card shadow">
+            <img src="executiveroom.webp" class="card-img-top" alt="Room">
+            <div class="card-body">
+              <h5 class="card-title">Executive Room</h5>
+              <p class="card-text">Perfect for business travelers with workspace and complimentary WiFi.</p>
+              <button class="btn btn-primary">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-5 bg-light" id="services">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+      <div class="row text-center g-4">
+        <div class="col-md-3" data-aos="flip-left" data-aos-delay="100">
+          <i class="bi bi-wifi display-5 text-primary"></i>
+          <h5 class="mt-3">Free WiFi</h5>
+        </div>
+        <div class="col-md-3" data-aos="flip-left" data-aos-delay="200">
+          <i class="bi bi-cup-hot display-5 text-primary"></i>
+          <h5 class="mt-3">Breakfast Included</h5>
+        </div>
+        <div class="col-md-3" data-aos="flip-left" data-aos-delay="300">
+          <i class="bi bi-water display-5 text-primary"></i>
+          <h5 class="mt-3">Swimming Pool</h5>
+        </div>
+        <div class="col-md-3" data-aos="flip-left" data-aos-delay="400">
+          <i class="bi bi-car-front display-5 text-primary"></i>
+          <h5 class="mt-3">Free Parking</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="booking" id="booking">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Book Your Stay</h2>
+      <form class="row g-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-md-4">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Phone</label>
+          <input type="tel" class="form-control" placeholder="Enter your phone" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Check-in Date</label>
+          <input type="date" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Check-out Date</label>
+          <input type="date" class="form-control" required>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-success px-5">Confirm Booking</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-5" id="contact">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="text-center">📍 123 Beach Road, Chennai, India | 📞 +91 98765 43210 | ✉️ info@fivestarhotel.com</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Five Star Hotel. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true, 
+      duration: 1000 
+    });
+  </script>
+</body>
+</html>
